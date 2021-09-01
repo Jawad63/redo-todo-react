@@ -8,8 +8,8 @@ function App() {
     <>
       <TodoList />
       <input type="text" />
-      <button>Add Todo</button>
-      <button>Delete Todo</button>
+      <button className="btn btn-primary mx-2">Add Todo</button>
+      <button className="btn btn-danger mx-2">Delete Todo</button>
     </>
       
   )
