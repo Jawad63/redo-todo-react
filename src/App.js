@@ -10,6 +10,7 @@ function App() {
       <input type="text" />
       <button className="btn btn-primary mx-2">Add Todo</button>
       <button className="btn btn-danger mx-2">Delete Todo</button>
+      <h3 className="mx-3">How many left to do?</h3>
     </>
       
   )
