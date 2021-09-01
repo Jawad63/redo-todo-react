@@ -8,7 +8,8 @@ import TodoList from "./TodoList";
 
 function App() {
   // adding a default state of an empty array: got no todos at the moment->
-  // use state returns an array []: We can destructure that array and set it to useState. First element we'll add will be all of our todos. And the second element will be a function that will help us update our Todos.  
+  // use state returns an array []: We can destructure that array and set it to useState. Object destructuring: it allows us to extract multiple pieces of data from an array or object and assign them to their own variables.
+  //First element(todos) we'll add will be all of our todos. And the second element (setTodos) will be a function that will help us update our Todos.
   const[todos, setTodos] = useState([])
 
 
