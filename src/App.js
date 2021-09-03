@@ -13,8 +13,8 @@ function App() {
 
   //First element(todos) we'll add will be all of our todos. And the second element (setTodos) will be a function that will help us update our Todos.
 
-                    // need to store them in an object: name & ID required!!
-  const [todos, setTodos] = useState([{ id: 1, name: 'Todo-1', complete: false}]);
+                    
+  const [todos, setTodos] = useState([]);
 
 
   return (
