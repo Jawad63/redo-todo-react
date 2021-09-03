@@ -1,12 +1,11 @@
 import React from 'react'
+import Todo from './Todo'
 
-export default function TodoList({todos}) {
+export default function TodoList({ todos }) {
    return (
-      <div className="mx-3 py-2">
-         {/* We are printing out our Todos here: */}
-         
-         {todos[0]} {todos[1]} {todos[2]}
-         
-      </div>
+      //maping over all Todos: 
+      todos.map(todo => {
+         return <Todo todo = {todo} />
+      })
    )
 }
