@@ -9,6 +9,9 @@ import TodoList from "./TodoList";
 // uuid generator:
 import { stringify, v4 as uuidv4 } from 'uuid';
 
+//styleSheet: 
+import "./style.css";
+
 
 /////////////////////////////////////////////////////////////////////////////////
 
@@ -76,19 +79,27 @@ function App() {
     // adding the input for new Todo:
     // A fragment(<></>) will allow us to return multiple things. A JS function will only return one thing that's why we have to use an empty element here.
     <>
-      
-      <TodoList todos={todos} toggleTodo={toggleTodo} />
-      
-      <input type="text" ref={todoNameRef} />
 
-      {/* creating an onclick so when we can add our todos to the list */}
-      <button className="btn btn-primary mx-2" onClick={handleAddTodo}>Add Todo</button>
+      <div className="container">
 
-      {/* This will delete a todo: */}
-      <button className="btn btn-danger mx-2" onClick={handleClearTodo}>Delete Todo</button>
+        <h3>Create your Todo List :)</h3>
 
-      {/* This will tell us how many todos are left: */}
-      <h3 className="mx-3">How many todos left: {todos.filter(todo => !todo.complete).length}</h3>
+        <input type="textarea" rows="3" cols="20" ref={todoNameRef} />
+
+        {/* creating an onclick so when we can add our todos to the list */}
+        <button className="btn btn-primary" onClick={handleAddTodo}>Add Todo</button>
+
+        {/* This will delete a todo: */}
+        <button className="btn btn-danger" onClick={handleClearTodo}>Delete Todo</button>
+        
+      </div>
+
+      <div className="container">
+        {/* This will tell us how many todos are left: */}
+        <h3 className="mx-3">Todos left: {todos.filter(todo => !todo.complete).length}</h3>
+        <hr/>
+        <h4><TodoList todos={todos} toggleTodo={toggleTodo} /></h4>
+      </div>
 
     </>
   )

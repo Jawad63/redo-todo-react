@@ -13,7 +13,7 @@ export default function Todo({ todo, toggleTodo }) {
          {/*need to have checkbox by todos */}
          <label>
 
-            <input type="checkbox" checked={todo.complete} onChange = {handleTodoClick} />
+            <input type="checkbox" className="checkbox" checked={todo.complete} onChange = {handleTodoClick} />
             {todo.name}
                
          </label>

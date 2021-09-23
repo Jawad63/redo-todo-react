@@ -1,0 +1,19 @@
+.container {
+   background-color: cadetblue;
+   padding: 2rem;
+   margin-top: 2rem;
+}
+
+input {
+   background-color: lightblue;
+}
+
+.checkbox{
+   margin: 1rem;
+   height: 1rem;
+   width: 1rem;
+}
+
+button{
+   margin: 1rem;
+}
